@@ -1,0 +1,11 @@
+{
+  "name": "login-reigster",
+  "version": "1.0.0",
+  "scripts": {
+    "build:sass": "sass src/scss:dist/css",
+    "watch:sass": "sass --watch src/scss:dist/css"
+  },
+  "devDependencies": {
+    "sass": "^1.83.4"
+  }
+}

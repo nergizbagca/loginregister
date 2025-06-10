@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login-Register</title>
+  <link rel="icon" href="..//src/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../dist/css/index.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="localization">
+      <button type="button" class="btn-lang" aria-label="Türkçe" onclick="setLanguage('tr')">tr</button>
+      <button type="button" class="btn-lang" aria-label="English" onclick="setLanguage('en')">en</button>
+    </div>
+    <div class="card">
+      <div class="tab-header">
+        <button class="tab-button tab-button-primary active" data-id="login" data-i18n="login"></button>
+        <button class="tab-button tab-button-secondary" data-id="register" data-i18n="register"></button>
+      </div>
+
+      <div class="tab-content">
+        <div class="content active" id="login">
+          <div class="content-flex">
+            <input type="email" id="email" placeholder="E-Posta Adresiniz" data-i18n="email_address" required />
+            <input type="password" id="password" placeholder="Parolanız" data-i18n="password" required />
+            <button type="submit" class="form-btn btn-log" data-i18n="login"></button>
+          </div>
+        </div>
+
+        <div class="content" id="register">
+          <div class="content-flex">
+            <input type="text" id="reg-name" placeholder="Adınız Soyadınız" data-i18n="name" required />
+            <input type="email" id="reg-email" placeholder="E-Posta Adresiniz" data-i18n="email_address" required />
+            <input type="password" id="reg-password" placeholder="Parolanız" data-i18n="password" required />
+            <button type="submit" class="form-btn btn-register" data-i18n="register"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../src/js/app.js"></script>
+  <script src="../src/js/localization.js"></script>
+</body>
+
+</html>

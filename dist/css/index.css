@@ -1,0 +1,138 @@
+body {
+  background-color: #2E323E;
+  font-family: "Roboto";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.localization {
+  display: flex;
+  margin-bottom: 1.5rem;
+  width: 6.2rem;
+  gap: 0.6rem;
+}
+
+.btn-lang {
+  background-color: #1C1F27;
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  border: 0;
+  border-radius: 0.1rem;
+  color: #fdfeff;
+  height: 2.9rem;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+.card {
+  background-color: #1c1f27;
+  border-radius: 0.3rem;
+  max-width: 48rem;
+  padding: 1.6rem 1.3rem 1.3rem;
+  width: 100%;
+  position: relative;
+  margin-top: -3px;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.tab-button {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 0.07rem solid #909296;
+  color: #696c70;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.tab-button-primary.active {
+  color: #8CA632;
+  border-color: #8CA632;
+}
+.tab-button-secondary.active {
+  color: #E84362;
+  border-color: #E84362;
+}
+
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
+.content-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.content .form-btn {
+  height: 45px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+.content .btn-log {
+  background-color: #8CA632;
+}
+.content .btn-register {
+  background-color: #E84362;
+}
+
+input {
+  background: none;
+  color: #fff;
+  height: 37px;
+  border: none;
+  border-bottom: 0.1rem solid #909296;
+}
+input:focus-within {
+  outline: none;
+}
+input::placeholder {
+  color: #fff;
+}
+
+.toast {
+  position: absolute;
+  bottom: 50px;
+  left: 80%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+.toast.success {
+  background-color: #28a745;
+}
+.toast.error {
+  background-color: #dc3545;
+}
+.toast.show {
+  opacity: 1;
+}
+.toast.hide {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
